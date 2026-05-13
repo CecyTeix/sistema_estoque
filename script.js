@@ -18,7 +18,7 @@ formulario.addEventListener('submit', (event) => {
     novaMarca.textContent = `Marca: ${marca.value}`
 
     const novoPreco = document.createElement("p")
-    novoPreco.textContent = `Preço: ${preco.value}`
+    novoPreco.textContent = `Preço R$: ${Number(preco.value).toFixed(2)}`
 
     const novaQtd = document.createElement("p")
     novaQtd.textContent = `Quantidade em Estoque: ${qtde_estoque.value}`
