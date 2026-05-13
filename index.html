@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Estudando JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Estoque</h1>
+        <p>Gerencie os produtos do seu estoque</p>
+    </header>
+    <div class="menuCadastro">
+        <p class="cadastrar">Cadastrar Produto</p>
+
+        <form id="formulario" class="formulario">
+            <div class="entradas">
+                <div>
+                    <label for="nome">Produto:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome do produto:" required>
+                </div>
+                <div>
+                    <label for="marca">Marca:</label><br>
+                    <input type="text" id="marca" name="marca" placeholder="Digite a marca do produto:" required>
+                </div>
+                <div>
+                    <label for="preco">Preço R$:</label><br>
+                    <input type="number" id="preco" name="preco" placeholder="0.00" min="0" step="0.01" required>
+                </div>
+                <div>
+                    <label for="qtde_estoque">Quantidade:</label><br>
+                    <input type="number" id="qtde_estoque" name="qtde_estoque" placeholder="Informe a quantidade" min="0" required>
+                </div>
+            </div>
+            <div class="botao">
+                <button>Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <h2 class="subtitulo">Produtos Cadastrados</h2>
+    <section id="container" class="container">
+        <!-- <div class="card" id="card">
+            <h2>Fone de Ouvido</h2>
+            <p>Marca: JBL</p>
+            <p>Preço R$: 199.90</p>
+            <p>Quantidade: 25</p>
+        </div> -->
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
