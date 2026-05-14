@@ -34,7 +34,7 @@ formulario.addEventListener('submit', (event) => {
         novoCard.remove()
     })
 
-    novoCard.append(novoNome, novaMarca, novoPreco, novaQtd, botaoExcluir)
+    novoCard.append(novoNome, novaMarca, novoPeso, novoPreco, novaQtd, botaoExcluir)
     container.append(novoCard)
     
     formulario.reset()
