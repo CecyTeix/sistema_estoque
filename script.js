@@ -1,6 +1,7 @@
 const formulario = document.querySelector('#formulario')
 const nome = document.querySelector('#nome')
 const marca = document.querySelector('#marca')
+const peso = document.querySelector('#peso')
 const preco = document.querySelector('#preco')
 const qtde_estoque = document.querySelector('#qtde_estoque')
 const container = document.querySelector('#container')
@@ -16,6 +17,9 @@ formulario.addEventListener('submit', (event) => {
 
     const novaMarca = document.createElement("p")
     novaMarca.textContent = `Marca: ${marca.value}`
+
+    const novoPeso = document.createElement("p")
+    novoPeso.textContent = `Peso/Volume: ${Number(peso.value)}`
 
     const novoPreco = document.createElement("p")
     novoPreco.textContent = `Preço R$: ${Number(preco.value).toFixed(2)}`
